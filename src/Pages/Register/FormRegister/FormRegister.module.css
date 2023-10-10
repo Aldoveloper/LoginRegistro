@@ -1,0 +1,154 @@
+.estiloLabel {
+    font-size: 11px;
+    margin: 0;
+    color: #fff;
+  }
+
+  .inputItem{
+    margin-top: 11px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .inputItem div {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .inputItem label {
+    height: max-content !important;
+  }
+
+  
+.estiloInput {
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+    box-shadow: none !important;
+    box-sizing: border-box ;
+    border-color: #000000;
+    border-radius: 20;
+  }
+  
+  .estiloInput input,
+  div:has(.estiloTextarea),
+  span:has(.estiloTextarea),
+  .estiloTextarea {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 400;
+  }
+  
+  span:has(.estiloTextarea) {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .condiciones{
+    display: flex;
+    /* margin: 0px; */
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .button{
+    border-radius: 4.301px;
+    border: 0.86px solid rgb(0, 0, 0);
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    width: 300px;
+    height: 40px;
+    box-shadow: -2px 3px 1px 1px rgba(0, 0, 0, 1);
+    ;
+  }
+
+  .button:hover{
+   scale: 0.9;
+  }
+
+  .crearTitulo{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+  
+  }
+.title{
+  margin-bottom: 29px;
+}
+.text{
+  font-size: 12px;
+  font-family: poppins;
+}
+.text1{
+  font-size: 12px;
+  font-family: poppins;
+  text-align: left;
+
+}
+.divForm{
+  max-height: 450px;
+}
+
+.registerDiv{
+  display: flex;
+  flex-direction: column;
+
+}
+@media (max-width: 767px) {
+  .registerDiv{
+    padding: 10px;
+  }
+  .button{
+    width: 200px;
+  }
+  .divForm{
+    padding-right: 15px;
+    max-height: 350px;
+    overflow-y: auto;
+    
+  }
+  .condiciones{
+    flex-direction: column;
+
+    justify-content: flex-start;
+  }
+  .registerDiv{
+    flex-direction: column;
+  }
+  .text1{
+    text-align: center;
+  }
+}
+.divForm::-webkit-scrollbar {
+  width: 10px; /* Ancho del scrollbar */
+}
+
+.divForm::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del thumb (la parte deslizable) */
+  border-radius: 5px; /* Borde redondeado del thumb */
+}
+
+.divForm::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del thumb al pasar el mouse */
+}
+
+.divForm::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Color de fondo del track (el área donde no hay scroll) */
+}

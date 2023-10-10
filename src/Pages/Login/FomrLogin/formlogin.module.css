@@ -1,0 +1,173 @@
+.estiloLabel {
+  font-size: 11px;
+  margin: 0;
+  color: #fff;
+}
+
+.inputItem {
+  margin-top: 11px !important;
+}
+
+.inputItem div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.inputItem label {
+  height: max-content !important;
+}
+
+.estiloInput {
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #000000;
+  border-radius: 20;
+  box-shadow: none !important;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.estiloInput input,
+div:has(.estiloTextarea),
+span:has(.estiloTextarea),
+.estiloTextarea {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 400;
+}
+
+span:has(.estiloTextarea) {
+  border-radius: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.formCuenta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.button {
+  border-radius: 4.301px;
+  border: 0.86px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  width: 120px;
+  height: 40px;
+  box-shadow: -2px 3px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 17.2;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttonInicio {
+  border-radius: 4.301px;
+  border: 0.86px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  width: 300px;
+  height: 40px;
+  box-shadow: -2px 3px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 17.2;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonInicio:hover {
+  scale: 0.9;
+}
+
+.title {
+  margin-bottom: 94px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoPulsof {
+  margin-bottom: 15px;
+}
+
+.iniciarTitulo {
+  width: 310px;
+text-align: center;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttonCuenta {
+  border-radius: 4.301px;
+  border: 0.86px 0px 0px 0px solid rgb(0, 0, 0);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  width: 400px;
+  height: 40px;
+  box-shadow: 0px 0.5px 0.1px -0.1px rgba(0, 0, 0, 1);
+  font-size: 17.2;
+  font-weight: 500;
+  text-align: left;
+  align-items: left;
+}
+
+.buttonAtras {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.buttonAtras:hover {
+  scale: 0.93;
+}
+.controler {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorCuenta {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 149px;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .title {
+    display: flex;
+
+  }
+  .contenedorCuenta{
+    width: 100%;
+    padding: 20px;
+  }
+  .controler,
+  .formCuenta {
+    width: 100%;
+  }
+  .iniciarTitulo{
+    text-align: center;
+  }
+}

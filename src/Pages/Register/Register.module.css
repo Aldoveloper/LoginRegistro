@@ -1,0 +1,141 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.board {
+  display: flex;
+  width: 928px;
+  height: 593px;
+  background-color: #fff;
+  /* overflow: hidden; */
+  border-radius: 20px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.3);
+  margin: 0px 100px;
+}
+
+.left {
+  display: flex;
+  background-color: #fffa8e;
+  flex: 1;
+  height: 593px;
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.leftContainerCohete {
+  display: flex;
+  position: absolute;
+  top: -37px;
+  bottom: 10px;
+  left: -80px;
+  z-index: 1;
+}
+
+.nube {
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+.nube2 {
+  right: 79px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  bottom: -20px;
+}
+.rigth {
+  display: flex;
+  background-color: #fff;
+  flex: 1;
+  height: 593px;
+
+  border-radius: 20px 20px 20px 0px;
+  padding: 0px 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.leftContainer {
+  display: flex;
+  width: 220px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  font-family: poppins;
+  margin-bottom: 35px;
+}
+.list {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: poppins;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+  align-items: flex-end;
+}
+.leftContainerLogo {
+  display: flex;
+  width: 120px;
+  position: absolute;
+  bottom: 40px;
+  left: 113px;
+}
+
+@media (max-width: 731px) {
+  .left {
+    order: 1;
+
+    border-radius: 0;
+  }
+  .rigth {
+    order: 2;
+    width: 100%;
+  }
+  .leftContainerCohete {
+  display: none;
+  }
+  .nube {
+    position: absolute;
+    width: 30px;
+    left: auto;
+    top: auto;
+    right: 50px;
+    padding-right: 40px;
+
+  }
+  .nube2 {
+    position: relative;
+padding: 17px;;
+    left: auto;
+    bottom: 0;
+  }
+
+  .leftContainer {
+    display: none;
+  }
+  .leftContainerLogo {
+    display: none;
+  }
+
+  .list,
+  .title {
+    display: none;
+  }
+  .board {
+    width: auto;
+    flex-direction: column;
+  }
+}
